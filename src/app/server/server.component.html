@@ -1,2 +1,5 @@
-<p>Server Component :</p>
-<p>{{'Server'}} with id {{serverId}} has is {{serverStatus}}</p>
+<!-- <p>Server Component :</p> -->
+<p [ngStyle]="{color : getColor()}" 
+    [ngClass]='{"online" : serverStatus === "online" , "offline" : serverStatus === "offline"}' >
+    {{'Server'}} with id {{serverId}} has is {{serverStatus}}
+</p>
